@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hz Audio Conversion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <section class="container">
+        <div class="title">
+            <h1>Hz Audio Conversion</h1>
+            <p>Converted files will be saved in the <b>same directory</b> as the original file.</p>
+            <br>
+        </div>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+            <div class="input-field">
+                <label for="hz_option">Enter Desired Target Frequency (20 Hz to 20,000 Hz):</label>
+                <input type="text" id="hz_option" name="hz_option" placeholder="e.g., 528" required>
+            </div>
+            <div class="input-field">
+                <label for="file">Select MP3 File:</label>
+                <input type="file" id="file" name="file" accept=".mp3" required>
+            </div>
+            <button type="submit" class="submit-button">Upload</button>
+        </form>
+        <footer>
+            <p>&copy; 2024 Hz Audio Conversion. All rights reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>
