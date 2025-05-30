@@ -2,3 +2,4 @@ Flask==3.0.3
 librosa==0.10.2.post1
 soundfile==0.12.1
 numpy==1.26.4
+samplerate==0.2.0

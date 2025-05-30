@@ -2,8 +2,6 @@
 
 A Python application for converting audio files to desired frequencies for sound therapy and research purposes.
 
-Assisting scientists, researchers, and [cereset](https://cereset.com/) practitioners in research related to sound and frequency by converting everyday sounds and music to their desired hertz.
-
 ## Installation
 
 1. Clone the repository:
